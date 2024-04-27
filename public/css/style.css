@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 700px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 0 2px #000000a9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+.wrapper h1 {
+  font-size: 40px;
+  font-weight: 200;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-bottom: 0.5px solid black;
+}
+form {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* display: none; */
+}
+input {
+  padding: 15px 20px;
+  width: 70%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 2px 1px 0px;
+  border: none;
+}
+textarea {
+  padding: 15px 20px;
+  width: 70%;
+  height: 150px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 2px 1px 0px;
+  border: none;
+}
+input:focus {
+  border: 0.1px solid black;
+  transition: all 1s;
+}
+.submit {
+  padding: 20px 20px;
+  width: 70%;
+  background-color: royalblue;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.submit:hover {
+  background-color: #4169e1b6;
+  transition: all 1s;
+}
+
+.pop-up {
+  position: absolute;
+  top: 1rem;
+  right: 10rem;
+  padding: 2rem;
+  background-color: black;
+  width: 320px;
+  border-radius: 10px;
+  color: white;
+  border-top: 10px solid rgb(0, 255, 0);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: none;
+}
+.pop-up2 {
+  position: absolute;
+  top: 1rem;
+  right: 10rem;
+  padding: 2rem;
+  background-color: black;
+  width: 320px;
+  border-radius: 10px;
+  color: white;
+  border-top: 10px solid red;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: none;
+}
+.pop-up3 {
+  position: absolute;
+  top: 1rem;
+  right: 10rem;
+  padding: 2rem;
+  background-color: black;
+  width: 320px;
+  border-radius: 10px;
+  color: white;
+  border-top: 10px solid #396aff;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: none;
+}
+
+/* spinner */
+.spinner {
+  font-size: 30px;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  color: royalblue;
+  display: none;
+}
+.spinner p {
+  font-size: 17px;
+  margin-top: 1rem;
+}
