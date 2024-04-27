@@ -21,6 +21,7 @@ const mailController = (req, res) => {
         service: 'gmail',
         auth: {
           type: 'OAuth2',
+          //change the user with the one you've permitted to use thus API on the google console
           user: 'business.briann@gmail.com',
           clientId: credentials.CLIENT_ID,
           clientSecret: credentials.CLIENT_SECRET,
@@ -34,13 +35,7 @@ const mailController = (req, res) => {
         to: 'briannjosh23@gmail.com',
         subject: `${subject}`,
         text: message,
-        html: `<h1>${message}</h1>
-        <p>
-        visit:
-              <a href='https://192.168.112.238:3000'>https://localhost:3000</a>
-              </p>
-                
-        `,
+        html: `<h1>${message}</h1>`,
       }
 
       const success = await transporter.sendMail(mailOptions)
@@ -52,7 +47,6 @@ const mailController = (req, res) => {
 
   //execute email service
   sendMail()
-  // res.status(201).json({ ok: true })
 }
 
 module.exports = {
